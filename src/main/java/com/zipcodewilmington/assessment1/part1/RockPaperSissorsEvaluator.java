@@ -61,11 +61,11 @@ public class RockPaperSissorsEvaluator {
         String winningMove = getWinningMove(handSignOfPlayer1);
 
         if (winningMove.equals(handSignOfPlayer2)) {
-            return handSignOfPlayer1;
+            return handSignOfPlayer2;
         } else if (handSignOfPlayer1.equals(handSignOfPlayer2)) {
             return "Tie!";
         } else {
-            return handSignOfPlayer2;
+            return handSignOfPlayer1;
         }
 
 
