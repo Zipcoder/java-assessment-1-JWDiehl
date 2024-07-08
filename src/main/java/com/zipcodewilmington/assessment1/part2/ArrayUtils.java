@@ -39,7 +39,7 @@ public class ArrayUtils {
         //Need to write method to remove all occurrences of an object from an array
 
         //Array list
-        List<Object> resultList = new ArrayList<>();
+        ArrayList<Object> resultList = new ArrayList<>();
 
         //Iterate through the array
         for (int i = 0; i < objectArray.length; i++) {
