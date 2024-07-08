@@ -48,8 +48,19 @@ public class BasicStringUtils {
     public static String invertCasing(String str) {
 
         //StringBuilder to start
-        //For loop
+        StringBuilder result = new StringBuilder(str.length());
+        //For loop - with if statement to see if character is upper or lower case
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                result.append(c);
+            }
+        }
+        return result.toString();
 
-        return null;
+        //return null;
     }
 }
