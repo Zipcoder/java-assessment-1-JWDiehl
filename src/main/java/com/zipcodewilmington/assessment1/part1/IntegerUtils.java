@@ -11,7 +11,17 @@ public class IntegerUtils {
      * @return the sum of all integers between 0 and not including `n`
      */
     public static Integer getSumOfN(Integer n) {
-        return null;
+        //Write method to getSumOfN(int n)
+
+        //Initialize a sum var
+        int sumOfN = 0;
+
+        //for loop to iterate through n
+        for (int i = 0; i <= n; i++) {
+            sumOfN += i;
+        }
+
+        return sumOfN;
     }
 
     /**
@@ -19,7 +29,21 @@ public class IntegerUtils {
      * @return the product of all integers between 0 and not including `n`
      */
     public static Integer getProductOfN(Integer n) {
-        return null;
+        // Write method to getProductOfN(int n)
+
+        if (n <= 0) {
+            return 0;
+        }
+
+        //initialize variable for product of n
+        int productThroughN = 1;
+
+        //iterate through
+        for (int i = 1; i <= n; i++) {
+            productThroughN *= i;
+        }
+
+        return productThroughN;
     }
 
     /**
@@ -27,6 +51,22 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
-        return null;
+        //Write method to reverseDigits(int val)
+
+        //Initialize a reverse var
+        int reversed = 0;
+
+        //Loop
+        while (val !=0) {
+            //get last digit of val
+            int digit = val % 10;
+            //Add new value to reversed number
+            reversed = reversed * 10 + digit;
+
+            //remove last dig  (value / 10)
+            val /= 10;
+        }
+
+        return reversed;
     }
 }
