@@ -14,6 +14,8 @@ public class PetOwner {
 
     public String name;
     public List<Pet> pets;
+    public int age;
+    public PetOwner owner;
 
     public PetOwner(String name, Pet... pets) {
         this.name = name;
@@ -40,6 +42,7 @@ public class PetOwner {
         pet.setOwner(null);
     }
 
+
     /**
      * @param pet pet to evaluate ownership of
      * @return true if I own this pet
@@ -53,13 +56,13 @@ public class PetOwner {
      * @return the age of the Pet object whose age field is the lowest amongst all Pets in this class
      */
     public Integer getYoungetPetAge() {
-        int minimumAge = Integer.MAX_VALUE;
+        float minimumAge = Integer.MAX_VALUE;
         for (Pet pet : pets) {
             if (pet.getAge() < minimumAge) {
                 minimumAge = pet.getAge();
             }
         }
-        return minimumAge;
+        return (int) minimumAge;
     }
 
 
