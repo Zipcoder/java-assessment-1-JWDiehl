@@ -31,7 +31,6 @@ public class PetOwner {
      */
     public void addPet(Pet pet) {
         pets.add(pet);
-        pet.setOwner(this);
     }
 
     /**
@@ -39,7 +38,6 @@ public class PetOwner {
      */
     public void removePet(Pet pet) {
         pets.remove(pet);
-        pet.setOwner(null);
     }
 
 
@@ -86,6 +84,9 @@ public class PetOwner {
      * @return the sum of ages of Pet objects stored in this class divided by the number of Pet object
      */
     public Float getAveragePetAge() {
+        if (pets.isEmpty()) {
+            return 0.0F;
+        }
         int sum = 0;
         for (Pet pet : pets) {
             sum += pet.getAge();

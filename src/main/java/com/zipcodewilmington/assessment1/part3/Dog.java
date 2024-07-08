@@ -34,6 +34,11 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
+        super();
+    }
+
+    public static void add(Pet pet) {
+
     }
 
     /**

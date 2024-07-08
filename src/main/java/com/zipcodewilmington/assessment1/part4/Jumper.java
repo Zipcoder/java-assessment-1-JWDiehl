@@ -6,12 +6,12 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-        // If j is greater than or equal to k, Bob can reach the flag in one jump
+        // If j is greater than or equal to k, Tariq can reach the flag in one jump
         if (j >= k) {
             return 1;
         }
 
-        // Calculate full jumps of j units Bob can make
+        // Calculate full jumps of j units Tariq can make
         int fullJumps = k / j;
 
         //Calculate remaining height after full jumps of j units

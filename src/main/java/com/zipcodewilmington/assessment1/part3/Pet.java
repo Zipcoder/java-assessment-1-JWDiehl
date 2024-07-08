@@ -51,7 +51,7 @@ public abstract class Pet implements Animal {
      */
     public String getName() {
 
-        return name;
+        return this.name;
     }
 
     /**
@@ -59,15 +59,15 @@ public abstract class Pet implements Animal {
      */
     public Integer getAge() {
 
-        return age;
+        return this.age;
     }
 
     /**
      * @param newPetOwner the new owner of this pet
-     * ensure this instance of `Pet` is added to the owner's composite `pets` list
+     *                    ensure this instance of `Pet` is added to the owner's composite `pets` list
      */
     public void setOwner(PetOwner newPetOwner) {
-        this.owner = owner;
+
     }
 
     /**
